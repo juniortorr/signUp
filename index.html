@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="mainContainer">
+    <img src="images/woods.jpg" alt="trees">
+    <div class="textContainer">
+        <div class="headings">
+            <h2>This is not a real online service! 
+                You know you need something like this in your left to help you 
+                realize your deepest dreams. 
+                Sign up <span>now</span> to get started</span></h2>
+            <h2 class="bottomH2">You <span>know</span> you want to</h2>
+        </div>
+        <div class="signUp">
+            <div class="signUpHeading">
+                <h1>Let's do this!</h1>
+            </div>
+            <form action="">
+                <div class="input">
+                    <label for="">FIRST NAME</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="input">
+                    <label for="">LAST NAME</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+                <div class="input">
+                    <label for="email">EMAIL</label>
+                    <input id="email" name="email" type="email" required>
+                </div>
+                <div class="input">
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" name="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                </div>
+                <div class="input">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <div class="input">
+                    <label for="confirmPassword">CONFIRM PASSWORD</label>
+                    <input type="password" name="confirmPassword" id="confirmPassword" required>
+                </div>
+                <p id="errorMsg" class="hidden">*passwords must match</p>
+                <button type="submit">Create Account</button>
+            </form>
+        </div>
+
+        <p>Already have an account? <span class="logIn">Log In</span></p>
+    </div>
+</div>
+    <script src="index.js"></script>
+</body>
+</html>
